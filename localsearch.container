@@ -1,0 +1,12 @@
+[Service]
+TimeoutStartSec=900
+
+[Unit]
+Description=Localhost search mock
+
+[Container]
+Image=localhost/localsearch:latest
+PublishPort=2314:80
+
+[Install]
+WantedBy=default.target
