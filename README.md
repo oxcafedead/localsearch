@@ -10,12 +10,12 @@ Image:
 
 ![Screenshot](demo.png)
 
-Pre-requisites: Firefox, GNU/Linux and systemd.
+Pre-requisites: Firefox, GNU/Linux, podman and systemd.
 
 ## Usage
 
 First, run `./init.sh` to build and install the container with the systemd service (it uses podman, and Quadlet to generate systemd service).
 
-As firefox does not allow to create custom search provider in new versions, one should install a plugin, for example I use [the following plugin](https://addons.mozilla.org/en-US/firefox/addon/add-custom-search-engine).
+As Firefox does not allow to create custom search provider in new versions, one should install a plugin, for example I use [the following one](https://addons.mozilla.org/en-US/firefox/addon/add-custom-search-engine).
 
-Then, in the plugin settings, add a new search engine with the search URL `http://localhost:2314/search?q=%s`.
+Then, in the plugin settings, add a new search engine with the search URL `http://localhost:2314/?q=%s`.
